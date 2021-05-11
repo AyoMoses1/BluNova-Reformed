@@ -1,0 +1,477 @@
+
+/* @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;1,500&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,600;1,500&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Poppins', sans-serif
+}
+/* My Headers */
+
+h1{
+    font-size: 56px;
+    font-weight: 900;
+}
+h2{
+    font-size: 40px;
+    color: #001e57;
+    font-weight: bold;
+}
+
+/* Links */
+a{
+    font-weight: 600;
+}
+/* Special Class Utilities */
+div.container{
+    padding: 0 100px;
+}
+div.row{
+    display: flex;
+}
+div.header-caption{
+    margin-bottom: 50px;
+}
+/* Colors */
+.orange{
+    color: #df6512;
+}
+.white{
+    color: #fff;
+}
+
+
+div.btn a{
+    display: inline-block;
+    padding: 10px 30px;
+    margin: 20px 20px 0 0;
+    text-decoration: none;
+    font-weight: bold;
+}
+div.btn a.orange{
+    background: #df6512;
+    color: #fff;
+}
+div.btn a.orange:hover{
+    background: #fff;
+    color: rgb(9, 9, 46);
+    transition: 1s;
+}
+div.btn a.blue{
+    background: #fff;
+    color: rgb(9, 9, 46); 
+}
+div.btn a.blue:hover{
+    background: rgb(9, 9, 46);
+    color: #fff; 
+    transition: 1s;
+}
+
+span.blue-hr{
+    display: inline-block;
+    width: 50px;
+    height: 1.5px;
+    background: rgb(9, 9, 46);
+}
+span.white-hr{
+    display: inline-block;
+    width: 50px;
+    height: 1.5px;
+    background:#fff;
+}
+span.orange-hr{
+    display: inline-block;
+    width: 70px;
+    height: 1.5px;
+    background: #df6512;
+    margin-left: -5px;
+}
+
+/* NavHeader Section */
+
+div.nav-header{
+    justify-content: space-between;
+    background: rgb(4, 4, 90);
+    font-size: 17px;
+    color: #fff;
+}
+div.nav-header div.nav-caption{
+    background: rgb(9, 9, 46);
+    width: 35%;
+    padding: 20px 0 20px 100px;
+}
+div.nav-header div.social{
+   justify-content: space-between;
+   width: 60%;
+   padding: 10px 100px 10px 0;
+}
+div.social-links{
+    font-size: 20px;
+    width: 20%;
+    justify-content: space-between;
+}
+div.social a{
+    color: #fff;
+}
+div.nav-header div.social div:last-child{
+    justify-content: space-around;
+    width: 60%;
+}
+span i.fa-phone,span i.fa-envelope{
+    color: #df6512
+}
+
+
+
+/* Navigation Section */
+nav div.row{
+    justify-content: space-between;
+}
+nav div.nav-brand{
+    width: 20%;
+    margin: auto 0;
+}
+nav ul.nav-links{
+    width: 60%;
+    display: flex;
+    list-style-type: none;
+    justify-content: space-around;
+}
+nav ul.nav-links li a{
+    text-decoration: none;
+    font-size: 20px;
+    display: inline-block;
+    color: black;
+    padding: 40px 0;
+    
+}
+nav ul.nav-links li a.nav-btn{
+    background: #df6512;
+    color: #fff;
+    padding: 10px 20px;
+    margin-top: 30px;
+}
+nav ul.nav-links li a.nav-btn:hover{
+    background:  rgb(9, 9, 46);
+    color: #fff;
+    transition: 1s;
+}
+
+
+
+/* Hero Section */
+div.hero{
+    background: linear-gradient(rgba(1, 14, 39, 0.8), rgba(3, 4, 41, 0.9)), url('./images/slider3.png') no-repeat;;
+    background-position: center center;
+    background-size: cover;
+    height: 600px;
+    color: #fff;
+    padding: 10rem 0;
+}
+div.hero-caption{
+    width: 70%;
+}
+div.hero-caption p{
+    font-size: 18px;
+    margin: 20px 0;
+}
+
+
+
+
+
+/* Business Niche Section */
+
+div.niche-caption{
+    padding: 100px 30px 100px 100px;
+    background: rgb(240, 239, 239);
+}
+div.bus-nich{
+    justify-content: space-between;
+}
+div.bus-nich>div{
+    width: 48%;
+}
+div.niche-icons{
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-right: 100px;
+    margin: auto 0;
+
+}
+div.niche-icons div{
+    width: 45%;
+    border: 1px solid rgb(233, 233, 233);
+    margin-bottom: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 10px;
+}
+div.niche-icons div:hover{
+    background: #001e57;
+    color: #fff;
+}
+div.niche-icons div:hover span.icon{
+    color: #fff;
+    animation: slideDown ease 1s;
+}
+div.niche-icons div:hover h4{
+    color: #fff;
+    animation: slideUp ease 1s;
+}
+
+span.icon{
+    display: inline-block;
+    font-size: 60px;
+    color: #df6512;
+}
+
+/* What We Do Section */
+div.what-we-do{
+    padding: 100px 0;
+}
+div.what-we-do div.row {
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+div.what-we-do div.row > div{
+    width: 32%;
+    margin-bottom: 50px;
+}
+div.what-we-do div.btn a:hover{
+    background: rgb(4, 4, 90);
+    color: #fff;
+}
+a.card-btn{
+    margin-top: 50px;
+    display: inline-block;
+    text-transform: uppercase;
+    color: rgb(4, 4, 90);
+}
+a.card-btn:hover{
+    color: #df6512;
+}
+div.project-card img{
+    width: 100%;
+    height: 50%;
+}
+div.project-card:hover img{
+    transform: scale(1.1);
+    transition: 1s;
+    width: 100%;
+}
+div.project-card div:hover{
+    overflow: hidden !important;
+}
+
+/* Project Section */
+div.projects{
+    background: linear-gradient(rgba(1, 14, 39, 0.8), rgba(3, 4, 41, 0.6)), url(images/SLIDER\ 2.jpg) no-repeat;
+    background-position:center ;
+    background-size: cover;
+    padding: 10rem;
+}
+div.project-caption{
+    background: #fff;
+    width: 50%;
+    padding: 50px 20px;
+    position: relative;
+}
+
+div.carousel-btn {
+    position: absolute;
+    top: 40px;
+    right: 50px;
+}
+div.carousel-btn div{
+    border: 1px solid rgb(233, 233, 233);
+    border-radius: 50%;
+    padding: 10px 15px;
+    margin: 20px 5px 20px;
+    cursor: pointer;
+    font-size: 20px;
+}
+div.carousel-btn div:hover{
+    background: rgb(12, 12, 112);
+    border: none;
+    color: #fff;
+}
+div.project-carousel a{
+    color: #df6512;
+}
+
+
+
+/* Reviews */
+div.reviews{
+    padding: 10rem 0;
+}
+div.reviews div.header-caption{
+    text-align: center;
+}
+div.client-reviews{
+    justify-content: space-between;
+}
+div.client-reviews div{
+    padding: 20px;
+    background: rgb(243, 243, 243);
+    width: 30%;
+    text-align: center;
+}
+div.client-reviews div p{
+    font-size: 16px;
+    font-style: italic;
+    color: rgb(131, 130, 130);
+}
+div.clients{
+    justify-content: space-between;
+}
+div.clients div{
+    margin-top: 30px;
+    width: 30%;
+}
+div.clients div img{
+    border-radius: 50%;
+}
+div.clients div span{
+    display: inline-block;
+    margin: auto 10px;
+}
+
+/* Message section */
+div.message{
+    background: rgba(1, 1, 75, 0.9);
+    position: relative;
+    padding: 10rem 0;
+    color: #fff;
+}
+div.layer{
+    background-image:url("images/slider1.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: -100000;
+   
+}
+div.message div.header-caption{
+    color: #fff ;
+}
+div.message div.header-caption h2{
+    color: #fff;
+}
+form div.row{
+    justify-content: space-between;
+}
+form div.row>div{
+    width: 30%;
+}
+form input, form textarea{
+    width: 100%;
+    padding: 15px 10px;
+    background: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.493);
+    margin-bottom: 20px;
+    font-size: 16px;
+    border-radius: 2px;
+    outline: none;
+    color: #fff;
+}
+::placeholder{
+    color: rgb(223, 219, 219);
+}
+form textarea{
+    height: 150px;
+}
+form button{
+    width: 100%;
+    outline: none;
+    border: none;
+    background: #df6512;
+    color: #fff;
+    font-size: 18px;
+    padding: 15px 20px;
+}
+form button:hover{
+    background: #000;
+    color: #fff;
+    transition: 1s;
+}
+
+/* Client Base Carousel */
+div.client-base{
+    margin: 100px 0;
+}
+div.client-base div.carousel{
+    justify-content: space-between;
+}
+div.client-base div.carousel div{
+    width: 20%;
+    text-align: center;
+}
+/* Footer Section */
+footer{
+    background: rgb(9, 9, 46);
+    color: #fff;
+    padding: 50px 0;
+}
+footer div.row{
+    justify-content: space-between;
+}
+div.brand,div.footer-services{
+    width: 30%;
+}
+footer div.btn a{
+    background:transparent  !important;
+    border: 1px solid rgba(243, 243, 243,0.6);
+    padding: 10px 50px  !important;
+}
+footer div.btn a:hover{
+    background: #df6512 !important;
+    border: none;
+    padding: 10px 50px  !important;
+    color: #fff !important;
+}
+
+footer ul {
+    list-style-type: none;
+}
+footer ul li{
+    font-size: 0.9rem;
+    margin-bottom: 10px;
+}
+div.footer-services div.header-caption{
+    margin-bottom: 20px;
+}
+
+
+
+
+/* KeyFrames */
+@keyframes slideDown{
+    0%{
+        transform: translateY(-30px);
+    }
+    100%{
+        transform: translateY(0px);
+    }
+}
+@keyframes slideUp{
+    0%{
+        transform: translateY(30px);
+    }
+    100%{
+        transform: translateY(0px);
+    }
+}
