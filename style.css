@@ -1,6 +1,3 @@
-
-/* @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;1,500&display=swap'); */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,600;1,500&display=swap');
 
 *{
@@ -8,10 +5,17 @@
     margin: 0;
     box-sizing: border-box;
 }
-
-body{
-    font-family: 'Poppins', sans-serif
+html{
+    height: 100%;
 }
+body{
+    font-family: 'Poppins', sans-serif;
+    min-height: 100%;
+    position: relative;
+    padding-bottom:400px;
+}
+
+
 /* My Headers */
 
 h1{
@@ -23,11 +27,21 @@ h2{
     color: #001e57;
     font-weight: bold;
 }
-
+h2.about-header{
+    font-size: 46px;
+    font-weight: 600;
+}
+h3{
+    font-size: 19px;
+}
 /* Links */
+
+
 a{
     font-weight: 600;
 }
+
+
 /* Special Class Utilities */
 div.container{
     padding: 0 100px;
@@ -93,6 +107,8 @@ span.orange-hr{
     margin-left: -5px;
 }
 
+
+
 /* NavHeader Section */
 
 div.nav-header{
@@ -138,7 +154,7 @@ nav div.nav-brand{
     margin: auto 0;
 }
 nav ul.nav-links{
-    width: 60%;
+    width: 40%;
     display: flex;
     list-style-type: none;
     justify-content: space-around;
@@ -148,41 +164,106 @@ nav ul.nav-links li a{
     font-size: 20px;
     display: inline-block;
     color: black;
-    padding: 40px 0;
+    padding: 20px 0;
     
 }
 nav ul.nav-links li a.nav-btn{
     background: #df6512;
     color: #fff;
     padding: 10px 20px;
-    margin-top: 30px;
+    margin-top: 10px;
 }
 nav ul.nav-links li a.nav-btn:hover{
     background:  rgb(9, 9, 46);
     color: #fff;
     transition: 1s;
 }
+.fixed{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 20;
+    background: #fff;
+    animation: navscroll 0.9s ease-in;
+    
+}
 
+@keyframes navscroll{
+    0%{
+        transform: translateY(-100px);
+    }
+    100%{
+        transform: translateY(0px);
+    }
+}
 
 
 /* Hero Section */
-div.hero{
-    background: linear-gradient(rgba(1, 14, 39, 0.8), rgba(3, 4, 41, 0.9)), url('./images/slider3.png') no-repeat;;
+div.banner-slider{
+    position: relative;
+    overflow: hidden;
+}
+.hero-next{
+    position: absolute;
+    top: 10%;
+    right: 60px;
+    font-size: 2rem;
+    cursor: pointer;
+    color: #fff;
+}
+.hero-prev{
+    position: absolute;
+    top: 20%;
+    left: 60px;
+    font-size: 2rem;
+    color: #fff;
+}
+div.hero1{
+    background: linear-gradient(rgba(1, 14, 39, 0.8), rgba(3, 4, 41, 0.9)), url('./images/slider3.png') no-repeat;
     background-position: center center;
     background-size: cover;
     height: 600px;
     color: #fff;
     padding: 10rem 0;
+    display: inline-block;
+}
+div.hero2{
+    background: linear-gradient(rgba(1, 14, 39, 0.8), rgba(3, 4, 41, 0.9)), url('./images/slider1.png') no-repeat;;
+    background-position: center center;
+    background-size: cover;
+    height: 600px;
+    color: #fff;
+    padding: 10rem 0;
+    display: inline-block;
+}
+div.hero3{
+    background: linear-gradient(rgba(1, 14, 39, 0.8), rgba(3, 4, 41, 0.9)), url('./images/slider2.jfif') no-repeat;;
+    background-position: center center;
+    background-size: cover;
+    height: 600px;
+    color: #fff;
+    padding: 10rem 0;
+    display: inline-block;
 }
 div.hero-caption{
     width: 70%;
 }
+/* div.hero1 div.hero-caption h1{
+    animation: heroscroll 1s ease-in;
+} */
 div.hero-caption p{
     font-size: 18px;
     margin: 20px 0;
 }
 
-
+/* @keyframes heroscroll{
+    0%{
+        transform: translateY(-100px);
+    }
+    100%{
+        transform: translateY(0px);
+    }
+} */
 
 
 
@@ -213,11 +294,14 @@ div.niche-icons div{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 20px 10px;
+    padding: 40px 10px;
 }
 div.niche-icons div:hover{
     background: #001e57;
     color: #fff;
+}
+div.niche-icons div:not(hover){
+    transition: 1s;
 }
 div.niche-icons div:hover span.icon{
     color: #fff;
@@ -261,31 +345,43 @@ a.card-btn:hover{
 }
 div.project-card img{
     width: 100%;
-    height: 50%;
+    height: 100%;
 }
 div.project-card:hover img{
-    transform: scale(1.1);
+    transform: scale(1.2);
     transition: 1s;
-    width: 100%;
 }
-div.project-card div:hover{
-    overflow: hidden !important;
+div.project-card:not(:hover) img{
+    transition: 1s;
+}
+div.project-card div{
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+div.project-card h3{
+    margin-bottom: 20px;
+}
+div.project-card p{
+    color: rgb(77, 67, 67);
+    line-height: 25px;
 }
 
 /* Project Section */
+
+
 div.projects{
     background: linear-gradient(rgba(1, 14, 39, 0.8), rgba(3, 4, 41, 0.6)), url(images/SLIDER\ 2.jpg) no-repeat;
     background-position:center ;
     background-size: cover;
     padding: 10rem;
 }
+
 div.project-caption{
     background: #fff;
     width: 50%;
     padding: 50px 20px;
     position: relative;
 }
-
 div.carousel-btn {
     position: absolute;
     top: 40px;
@@ -307,7 +403,28 @@ div.carousel-btn div:hover{
 div.project-carousel a{
     color: #df6512;
 }
-
+div.carousel-container{
+    overflow: hidden;
+}
+div.project-caption .next{
+    position: absolute;
+    top: 15%;
+    right: 10px;
+    font-size: 2rem;
+    cursor: pointer;
+    color: rgb(4, 4, 90);
+}
+div.project-caption .prev{
+    position: absolute;
+    top: 15%;
+    right: 60px;
+    font-size: 2rem;
+    cursor: pointer;
+    color: rgb(4, 4, 90);
+}
+div.project-carousel{
+    display: inline-block;
+}
 
 
 /* Reviews */
@@ -417,14 +534,24 @@ div.client-base div.carousel{
     justify-content: space-between;
 }
 div.client-base div.carousel div{
-    width: 20%;
+    width: 15%;
     text-align: center;
+}
+div.client-base div.carousel div img{
+    width: 100%;
+    height: 100px;
+    
 }
 /* Footer Section */
 footer{
     background: rgb(9, 9, 46);
     color: #fff;
     padding: 50px 0;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 400px;
 }
 footer div.row{
     justify-content: space-between;
@@ -454,10 +581,19 @@ footer ul li{
 div.footer-services div.header-caption{
     margin-bottom: 20px;
 }
-
-
-
-
+footer hr{
+    border: none;
+    margin: 50px 0 0 0;
+    height: 0.5px;
+    background: rgba(199, 199, 199, 0.3);
+}
+.footer-copyright{
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    color: #fff;
+    margin-top: 5px;
+}
 /* KeyFrames */
 @keyframes slideDown{
     0%{
