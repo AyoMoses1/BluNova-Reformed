@@ -54,7 +54,7 @@ div.header-caption{
 }
 /* Colors */
 .orange{
-    color: #df6512;
+    color: red;
 }
 .white{
     color: #fff;
@@ -69,7 +69,7 @@ div.btn a{
     font-weight: bold;
 }
 div.btn a.orange{
-    background: #df6512;
+    background: red;
     color: #fff;
 }
 div.btn a.orange:hover{
@@ -103,7 +103,7 @@ span.orange-hr{
     display: inline-block;
     width: 70px;
     height: 1.5px;
-    background: #df6512;
+    background: red;
     margin-left: -5px;
 }
 
@@ -125,7 +125,7 @@ div.nav-header div.nav-caption{
 div.nav-header div.social{
    justify-content: space-between;
    width: 60%;
-   padding: 10px 100px 10px 0;
+   padding: 20px 100px 10px 0;
 }
 div.social-links{
     font-size: 20px;
@@ -140,9 +140,12 @@ div.nav-header div.social div:last-child{
     width: 60%;
 }
 span i.fa-phone,span i.fa-envelope{
-    color: #df6512
+    color: red;
+    font-size: 0.8rem;
 }
-
+div.nav-header div.row:last-child span.nav-cont{
+    font-size: 12px;
+}
 
 
 /* Navigation Section */
@@ -168,7 +171,7 @@ nav ul.nav-links li a{
     
 }
 nav ul.nav-links li a.nav-btn{
-    background: #df6512;
+    background: red;
     color: #fff;
     padding: 10px 20px;
     margin-top: 10px;
@@ -315,7 +318,7 @@ div.niche-icons div:hover h4{
 span.icon{
     display: inline-block;
     font-size: 60px;
-    color: #df6512;
+    color: red;
 }
 
 /* What We Do Section */
@@ -341,7 +344,7 @@ a.card-btn{
     color: rgb(4, 4, 90);
 }
 a.card-btn:hover{
-    color: #df6512;
+    color: red;
 }
 div.project-card img{
     width: 100%;
@@ -401,7 +404,7 @@ div.carousel-btn div:hover{
     color: #fff;
 }
 div.project-carousel a{
-    color: #df6512;
+    color: red;
 }
 div.carousel-container{
     overflow: hidden;
@@ -515,7 +518,7 @@ form button{
     width: 100%;
     outline: none;
     border: none;
-    background: #df6512;
+    background: red;
     color: #fff;
     font-size: 18px;
     padding: 15px 20px;
@@ -565,7 +568,7 @@ footer div.btn a{
     padding: 10px 50px  !important;
 }
 footer div.btn a:hover{
-    background: #df6512 !important;
+    background: red !important;
     border: none;
     padding: 10px 50px  !important;
     color: #fff !important;

@@ -106,7 +106,7 @@
                     <form action="#">
                         <div class="header-caption">
                             <span>We Are Blunova</span>
-                            <h2>Request a Quote </h2>
+                            <h2>Send a Message</h2>
                             <span class="row">
                                 <span class="blue-hr"></span>
                                 <span class="orange-hr"></span>
@@ -116,7 +116,7 @@
                         <div class="form-input">
                             <div>
                                 <label for="fname"></label>
-                                <input type="text" placeholder="First Name">
+                                <input type="text" placeholder="First Name" name="fname">
                             </div>
                             <div>
                                 <label for="lname"></label>
@@ -138,15 +138,22 @@
                                 <label for="subject"></label>
                                 <input type="text" placeholder="Subject">
                             </div>
-                            <div>
-                                <textarea></textarea>
+                            <div class="contact-textarea">
+                                <textarea placeholder="Message"></textarea>
+                            </div>
+                            <div class="contact-us-btn btn">
+                                <a href="#" class="orange">ALL SERVICES</a>
                             </div>
                         </div>
                     </form>
                 </div>
             </div>
         </div>
-        <div class="contact-api"></div>
+        <div class="contact-api">
+            <div id="map">
+
+            </div>
+        </div>
     </main>
     <footer>
         <div class="container">
@@ -202,4 +209,18 @@
     <script src="https://code.jquery.com/jquery-3.6.0.slim.js" integrity="sha256-HwWONEZrpuoh951cQD1ov2HUK5zA5DwJ1DNUXaM6FsY="crossorigin="anonymous"></script>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script src='index.js'></script>
+    <script>
+        function initMap(){
+        var location = {lat:4.779370,lng:7.060840};
+        var map = new google.maps.Map(document.getElementById("map"),{
+            zoom: 4,
+            center: location
+        });
+        var marker = new google.maps.Marker({
+            position:location,
+            map: map
+        }); 
+}
+    </script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDZaB--dRZzRl87Dw5kt3K0ZCC4R54lQnY&&callback=initMap"></script>
 </body>

@@ -26,3 +26,5 @@ $(window).scroll(function(){
         $('.navbar').removeClass('fixed')
     }
 });
+
+ 
