@@ -150,9 +150,7 @@
             </div>
         </div>
         <div class="contact-api">
-            <div id="map">
-
-            </div>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31807.353412292137!2d7.032177224683597!3d4.78389074401574!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1069cc7d58fcfde5%3A0x6c124e428a636310!2sAbuloma%2C%20Port%20Harcourt!5e0!3m2!1sen!2sng!4v1620967361715!5m2!1sen!2sng" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
         </div>
     </main>
     <footer>
@@ -209,18 +207,4 @@
     <script src="https://code.jquery.com/jquery-3.6.0.slim.js" integrity="sha256-HwWONEZrpuoh951cQD1ov2HUK5zA5DwJ1DNUXaM6FsY="crossorigin="anonymous"></script>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script src='index.js'></script>
-    <script>
-        function initMap(){
-        var location = {lat:4.779370,lng:7.060840};
-        var map = new google.maps.Map(document.getElementById("map"),{
-            zoom: 4,
-            center: location
-        });
-        var marker = new google.maps.Marker({
-            position:location,
-            map: map
-        }); 
-}
-    </script>
-    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDZaB--dRZzRl87Dw5kt3K0ZCC4R54lQnY&&callback=initMap"></script>
 </body>

@@ -85,7 +85,7 @@ div.contact-form div.contact-us-btn a:hover{
     background: red;
     color: #fff;
 }
-#map{
+div.contact-api iframe{
     width: 100%;
     height: 500px;
     margin-bottom: 100px;
