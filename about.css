@@ -75,6 +75,9 @@ div.mission div.header-caption{
 div.team{
     margin: 100px 0;
 }
+div.team div.header-caption{
+    text-align: center;
+}
 div.team div.row{
     justify-content: space-between;
 }
