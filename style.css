@@ -12,7 +12,7 @@ body{
     font-family: 'Poppins', sans-serif;
     min-height: 100%;
     position: relative;
-    padding-bottom:400px;
+    /* padding-bottom:400px; */
 }
 
 
@@ -32,7 +32,7 @@ h2.about-header{
     font-weight: 600;
 }
 h3{
-    font-size: 19px;
+    font-size: 30px;
 }
 /* Links */
 
@@ -123,7 +123,7 @@ div.nav-header div.nav-caption{
     padding: 20px 0 20px 100px;
 }
 div.nav-header div.social{
-   justify-content: space-between;
+   justify-content: space-around;
    width: 60%;
    padding: 20px 100px 10px 0;
 }
@@ -149,6 +149,9 @@ div.nav-header div.row:last-child span.nav-cont{
 
 
 /* Navigation Section */
+nav{
+    position: relative;
+}
 nav div.row{
     justify-content: space-between;
 }
@@ -157,7 +160,7 @@ nav div.nav-brand{
     margin: auto 0;
 }
 nav ul.nav-links{
-    width: 40%;
+    width: 50%;
     display: flex;
     list-style-type: none;
     justify-content: space-around;
@@ -188,7 +191,6 @@ nav ul.nav-links li a.nav-btn:hover{
     z-index: 20;
     background: #fff;
     animation: navscroll 0.9s ease-in;
-    
 }
 
 @keyframes navscroll{
@@ -229,6 +231,7 @@ div.hero1{
     color: #fff;
     padding: 10rem 0;
     display: inline-block;
+    width: 100%;
 }
 div.hero2{
     background: linear-gradient(rgba(1, 14, 39, 0.8), rgba(3, 4, 41, 0.9)), url('./images/slider1.png') no-repeat;;
@@ -238,6 +241,7 @@ div.hero2{
     color: #fff;
     padding: 10rem 0;
     display: inline-block;
+    width: 100%;
 }
 div.hero3{
     background: linear-gradient(rgba(1, 14, 39, 0.8), rgba(3, 4, 41, 0.9)), url('./images/slider2.jfif') no-repeat;;
@@ -247,6 +251,7 @@ div.hero3{
     color: #fff;
     padding: 10rem 0;
     display: inline-block;
+    width: 100%;
 }
 div.hero-caption{
     width: 70%;
@@ -440,10 +445,13 @@ div.reviews div.header-caption{
 div.client-reviews{
     justify-content: space-between;
 }
-div.client-reviews div{
+div.client-reviews>div{
+    width: 30%;
+}
+div.client-reviews div.client-caption{
     padding: 20px;
     background: rgb(243, 243, 243);
-    width: 30%;
+    width: 100%;
     text-align: center;
 }
 div.client-reviews div p{
@@ -451,17 +459,13 @@ div.client-reviews div p{
     font-style: italic;
     color: rgb(131, 130, 130);
 }
-div.clients{
-    justify-content: space-between;
-}
-div.clients div{
-    margin-top: 30px;
-    width: 30%;
-}
-div.clients div img{
+div.client-reviews div.client img{
     border-radius: 50%;
 }
-div.clients div span{
+div.client-reviews div.client{
+    margin-top: 30px;
+}
+div.client span{
     display: inline-block;
     margin: auto 10px;
 }
@@ -550,11 +554,11 @@ footer{
     background: rgb(9, 9, 46);
     color: #fff;
     padding: 50px 0;
-    position: absolute;
+    /* position: absolute;
     bottom: 0;
     left: 0;
-    right: 0;
-    height: 400px;
+    right: 0; */
+    /* height: 400px; */
 }
 footer div.row{
     justify-content: space-between;
@@ -612,5 +616,254 @@ footer hr{
     }
     100%{
         transform: translateY(0px);
+    }
+}
+
+
+/* Hamburger Menu */
+.toggle-button{
+    display: none;
+    height: 30px;
+    width: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+}
+
+.menu-bar{
+    width: 100%;
+    height: 5px;
+    background: red;
+    border-radius: 4px;
+    display: none;
+    border-radius: 4px;
+}
+
+@media screen and (max-width:1200px){
+    div.nav-header div.nav-caption{
+        display: none;
+    }
+    div.nav-header div.social-links{
+        display: none;
+    }
+    div.nav-header div.social div:last-child{
+        width: 100%;
+        justify-content: space-between;
+    }
+    div.nav-header div.social{
+        width: 100%;
+        justify-content: space-between;
+        padding:20px;
+    }
+    div.hero-caption{
+        width: 90%;
+    }
+    div.hero-caption h1{
+        font-size: 40px;
+    }
+}
+
+@media screen and (max-width:1084px){
+    div.project-caption{
+        width: 80%;
+    }
+    div.bus-nich{
+        flex-wrap: wrap;
+    }
+    div.bus-nich>div{
+        width: 100%;
+    }
+    div.niche-caption{
+        margin-bottom: 50px;
+    }
+    div.niche-icons{
+        padding: 0 100px;
+    }
+    div.project-caption{
+        width: 80%;
+    }
+    div.project-caption .prev{
+        top: 92%;
+        left: 20px;
+    }
+    div.project-caption .next{
+        top: 92%;
+        left: 60px;
+    }
+}
+@media screen and (max-width:926px){
+    div.container{
+        padding: 0 50px;
+    }
+    footer div.row{
+        flex-direction: column;
+    }
+    footer div.row div{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    form div.row{
+        flex-wrap: wrap;
+    }
+    form div.row>div{
+        width: 49%;
+    }
+    form div.row>div:last-child{
+        width: 100%;
+    }
+    div.what-we-do div.row > div{
+        width: 48%;
+    }
+}
+
+
+
+@media screen and (max-width:898px){
+    div.client-reviews {
+        flex-direction: column;
+    }
+    div.client-reviews>div{
+        width: 100%;
+        margin: 0 auto 20px auto;
+    }
+    div.client-reviews div.client{
+        justify-content: center;
+    }
+    div.project-caption{
+        width: 100%;
+    }
+    nav{
+        padding: 10px 0 20px 0;
+    }
+    nav ul.nav-links{
+        display: none;
+    }
+    .toggle-button{
+        display: flex;
+    }
+    .toggle-button .menu-bar{
+        display: inline-block;
+    }
+    nav.navbar{
+        position: relative  ;
+    }
+    nav ul.nav-links.active{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        background: red;
+        animation: hamburger 1.5s ease-in-out;
+    }
+    @keyframes hamburger{
+        0%{
+            transform: translateX(-500px);
+        }
+        100%{
+            transform: translateX(0px);
+        }
+    }
+    nav ul.nav-links li a.nav-btn{
+        padding: 20px 0;
+
+    }
+    nav ul.nav-links li{
+        padding-left: 20px;
+        border-bottom: 2px solid #fff;
+    }
+    nav ul.nav-links li a{
+        color: #fff;
+    }
+    nav div.container{
+        padding: 5px 20px;
+    }
+    nav div.container div.row{
+        flex-direction: column;
+        align-items: flex-start;                                                     
+    }
+}
+@media screen and (max-width:728px){
+    div.what-we-do{
+        padding: 0 0 20px 0;
+    }
+    form div.row>div{
+        width: 100%;
+    }
+    div.projects{
+        padding: 5rem 50px;
+    }
+    div.what-we-do div.row > div{
+        width: 100%;
+    }
+    div.niche-caption,div.niche-icons{
+        padding:  50px;
+    }
+    div.niche-icons div{
+        width: 100%;
+    }
+    div.hero-caption{
+        width: 100%;
+    }
+    div.hero-caption h1{
+        font-size: 40px;
+    }
+    div.client-base div.carousel.row{
+     flex-wrap: wrap;
+    }
+    div.client-base div.carousel.row div{
+        width: 50%;
+    }
+    div.client-base div.carousel.row div img{
+       width: 150px;
+       height: 100px;
+    }
+    div.hero1,div.hero2,div.hero3{
+        padding: 5rem 0;
+    }
+
+}
+
+@media screen and (max-width:500px){
+    div.banner div.btn{
+        flex-direction: column;
+        text-align: center;
+    }
+    div.banner div.btn a{
+        padding: 10px;
+    }
+}
+@media screen and (max-width:446px){
+    div.nav-header div.social div:last-child{
+        flex-direction: column;
+        align-items: center;
+    }
+    div.nav-header div.social div:last-child span{
+        padding: 1px;
+    }
+    div.container{
+        padding: 0 20px;
+    }
+}
+
+@media screen and (max-width:380px){
+    footer div.row div{
+       text-align: center; 
+    }
+    div.projects{
+        padding: 5rem  20px;
+    }
+    div.projects div.header-caption{
+        margin-bottom: 20px;
+    }
+    div.header-caption{
+        text-align: center;
+    }
+    h2{
+        font-size: 30px;
+    }
+    h3{
+        font-size: 20px;
     }
 }
