@@ -224,7 +224,7 @@ div.banner-slider{
     color: #fff;
 }
 div.hero1{
-    background: linear-gradient(rgba(1, 14, 39, 0.8), rgba(3, 4, 41, 0.9)), url('./images/slider3.png') no-repeat;
+    background: linear-gradient(rgba(1, 14, 39, 0.6), rgba(3, 4, 41, 0.9)), url('./images/slider3.png') no-repeat;
     background-position: center center;
     background-size: cover;
     height: 600px;
@@ -234,7 +234,7 @@ div.hero1{
     width: 100%;
 }
 div.hero2{
-    background: linear-gradient(rgba(1, 14, 39, 0.8), rgba(3, 4, 41, 0.9)), url('./images/slider1.png') no-repeat;;
+    background: linear-gradient(rgba(1, 14, 39, 0.6), rgba(3, 4, 41, 0.9)), url('./images/slider1.png') no-repeat;;
     background-position: center center;
     background-size: cover;
     height: 600px;
@@ -244,7 +244,7 @@ div.hero2{
     width: 100%;
 }
 div.hero3{
-    background: linear-gradient(rgba(1, 14, 39, 0.8), rgba(3, 4, 41, 0.9)), url('./images/slider2.jfif') no-repeat;;
+    background: linear-gradient(rgba(1, 14, 39, 0.6), rgba(3, 4, 41, 0.9)), url('./images/slider2.jfif') no-repeat;;
     background-position: center center;
     background-size: cover;
     height: 600px;
@@ -350,6 +350,15 @@ a.card-btn{
 }
 a.card-btn:hover{
     color: red;
+}
+div.project-card {
+    /* background: red; */
+    position: relative;
+    height: 550px;
+}
+div.project-card .card-btn{
+    position: absolute;
+    bottom: 0;
 }
 div.project-card img{
     width: 100%;

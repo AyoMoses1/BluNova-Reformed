@@ -24,8 +24,8 @@
                     <a href="#"><span><i class="fab fa-instagram-square"></i></span></a>
                 </div>
                 <div class="row">
-                    <span>+234 80 9713 7563 <span><i class="fa fa-phone"  aria-hidden=true></i></span></span>
-                    <span>ayomoses96@gmail.com <span><i class="fa fa-envelope" aria-hidden="true"></i></span></span>
+                    <span>+234 80 2424 3181 <span><i class="fa fa-phone"  aria-hidden=true></i></span></span>
+                    <span>info@blunovaenergy.com<span><i class="fa fa-envelope" aria-hidden="true"></i></span></span>
                 </div>
             </div>
         </div>
@@ -58,16 +58,16 @@
                 <div class="container">
                     <div class="hero-caption">
                         <h1>Contact Us</h1>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptas aliquam ex ullam quisquam, magni Lorem ipsum dolor sit amet.</p>
+                        <p>Our operational offices are in Lagos and Milton Keynes, UK.</p>
                         <div class="btn row">
-                            <a href="#" class="orange">LEARN MORE</a>
-                            <a href="#" class="blue">OUR SOLUTIONS</a>
+                            <a href="#contact-form" class="orange">LEARN MORE</a>
+                            <!-- <a href="#" class="blue">OUR SOLUTIONS</a> -->
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="contact-form">
+        <div class="contact-form" id="contact-form">
             <div class="container">
                 <div class="">
                     <aside>
@@ -78,7 +78,7 @@
                                 <span><i class="fa fa-home" aria-hidden="true"></i></span> 
                                 <div>
                                     <h3>Office Address</h3>
-                                    <p>73 Ringer House Lane, Dynatis Newyork 33022, USA</p>
+                                    <p>13B Charles Ifeanyi str, Lekki phase 1, Lagos Nigeria.</p>
                                 </div>
                             </li>
                             <li>
@@ -92,7 +92,7 @@
                                 <span><i class="fa fa-envelope-open" aria-hidden="true"></i></span> 
                                 <div>
                                     <h3>Email</h3>
-                                    <p>ayocandy1@gmail.com</p>
+                                    <p>info@blunovaenergy.com</p>
                                 </div>
                             </li>
                             <li>
@@ -110,8 +110,9 @@
                             <a href="#"><span><i class="fab fa-instagram-square"></i></span></a>
                         </div>
                     </aside>
-                    <form action="#">
+                    <form id = "myForm" action="" method="POST">
                         <div class="header-caption">
+                            <h4 class="sent-notification"></h4>
                             <span>We Are Blunova</span>
                             <h2>Send a Message</h2>
                             <span class="row">
@@ -123,15 +124,15 @@
                         <div class="form-input">
                             <div>
                                 <label for="fname"></label>
-                                <input type="text" placeholder="First Name" name="fname">
+                                <input id ="fname" type="text" placeholder="First Name" name="fname">
                             </div>
                             <div>
                                 <label for="lname"></label>
-                                <input type="text" placeholder="Last Name">
+                                <input id ="lname" type="text" placeholder="Last Name">
                             </div>
                             <div>
                                 <label for="email"></label>
-                                <input type="email" placeholder="Email">
+                                <input id ="email" type="email" placeholder="Email">
                             </div>
                             <div>
                                 <label for="phone"></label>
@@ -143,13 +144,14 @@
                             </div>
                             <div>
                                 <label for="subject"></label>
-                                <input type="text" placeholder="Subject">
+                                <input id ="subject" type="text" placeholder="Subject">
                             </div>
                             <div class="contact-textarea">
-                                <textarea placeholder="Message"></textarea>
+                                <textarea placeholder="Message" id="body"></textarea>
                             </div>
                             <div class="contact-us-btn btn">
-                                <a href="#" class="orange">ALL SERVICES</a>
+                                <a href="#" class="orange">SEND A MESSAGE</a>
+                                <!-- <button class="orange" value="send Email"></button> -->
                             </div>
                         </div>
                     </form>
@@ -157,7 +159,7 @@
             </div>
         </div>
         <div class="contact-api">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31807.353412292137!2d7.032177224683597!3d4.78389074401574!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1069cc7d58fcfde5%3A0x6c124e428a636310!2sAbuloma%2C%20Port%20Harcourt!5e0!3m2!1sen!2sng!4v1620967361715!5m2!1sen!2sng" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3964.6166125083255!2d3.4649808140938325!3d6.44324912588027!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103bf453d246244d%3A0xacd765862e01e353!2s13%20Charles%20Ifeanyi%20St%2C%20Lekki%20Phase%20I%2C%20Lagos!5e0!3m2!1sen!2sng!4v1625985068465!5m2!1sen!2sng" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
         </div>
     </main>
     <footer>
@@ -174,23 +176,6 @@
                 </div>
                 <div class="footer-services">
                     <div class="header-caption">
-                        <h3>Our Services </h3>
-                        <span class="row">
-                            <span class="white-hr"></span>
-                            <span class="orange-hr"></span>
-                        </span>
-                    </div>
-                    <ul>
-                        <li>Oil & Gas Engineering</li>
-                        <li>Chemical Reasearch</li>
-                        <li>Industrial Equipments</li>
-                        <li>Building & Construction</li>
-                        <li>Energy Production</li>
-                        <li>Agricultural Sectors</li>
-                    </ul>
-                </div> 
-                <div class="footer-services">
-                    <div class="header-caption">
                         <h3>Our Values </h3>
                         <span class="row">
                             <span class="white-hr"></span>
@@ -198,12 +183,26 @@
                         </span>
                     </div>
                     <ul>
-                        <li>Excellence</li>
-                        <li>Innovation</li>
-                        <li>Commitment</li>
-                        <li>Discipline</li>
+                        <li>Respect</li>
+                        <li>Transparency</li>
                         <li>Integrity</li>
-                        <li>Honesty</li>
+                        <li>People and Social Empowerment</li>
+                    </ul>
+                </div> 
+                <div class="footer-services">
+                    <div class="header-caption">
+                        <h3>Our Services </h3>
+                        <span class="row">
+                            <span class="white-hr"></span>
+                            <span class="orange-hr"></span>
+                        </span>
+                    </div>
+                    <ul>
+                        <li>Oil Field Solutions</li>
+                        <li>Civil Construction Services</li>
+                        <li>Procurement & Equipment Leasing</li>
+                        <li>Scaffolding Services</li>
+                        <li>Consulting Services</li>
                     </ul>
                 </div> 
             </div>
@@ -211,6 +210,7 @@
             <span class="footer-copyright">&copy 2019 Solustrid Industry Theme. All rights reserved.</span>
         </div>
     </footer>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.slim.js" integrity="sha256-HwWONEZrpuoh951cQD1ov2HUK5zA5DwJ1DNUXaM6FsY="crossorigin="anonymous"></script>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script src='index.js'></script>
